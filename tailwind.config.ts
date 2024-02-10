@@ -27,6 +27,7 @@ const config: Config = {
                 grey: {
                     classic: "#a7b5c3",
                     light: "#ccdae7",
+                    disabled: "#6e7074",
                 },
                 border: {
                     yellow: "@ffc82f",

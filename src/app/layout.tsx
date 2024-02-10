@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Navbar } from "@/ui/navbar/Navbar";
 
 export const metadata: Metadata = {
     title: "Clone PointExe",
@@ -13,7 +14,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr">
-            <body className="bg-background-dark">
+            <body className="bg-background-dark p-1 md:p-6">
+                <Navbar />
                 <div>{children}</div>
             </body>
         </html>
