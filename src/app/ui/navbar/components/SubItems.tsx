@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { navbarLinks } from "@/app/ui/navbar/constants/navbarLinks";
-import { toggleSelected } from "@/app/ui/navbar/utils/toggleSelected";
+import { navbarLinks } from "../constants/navbarLinks";
+import { toggleSelected } from "../utils/toggleSelected";
 
 interface ISubItemsProps {
     activeIndex: number;
