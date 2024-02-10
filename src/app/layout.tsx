@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Clone PointExe",
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr">
-            <body>{children}</body>
+            <body className="bg-background-dark">
+                <div>{children}</div>
+            </body>
         </html>
     );
 }
