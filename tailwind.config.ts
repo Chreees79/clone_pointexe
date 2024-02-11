@@ -30,8 +30,12 @@ const config: Config = {
                     disabled: "#6e7074",
                 },
                 border: {
-                    yellow: "@ffc82f",
+                    yellow: "#ffc82f",
                     orange: "#f05b34",
+                },
+                input: {
+                    bg: "#171e25",
+                    hover: "#1e252c",
                 },
             },
         },

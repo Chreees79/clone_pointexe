@@ -37,7 +37,7 @@ export const Navbar = () => {
     }, [pathname]);
     return (
         <>
-            <nav className="flex flex-row justify-between items-center">
+            <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark">
                 <div className="p-2">
                     <Image src={Logo} alt={"PointExe Logo"} />
                 </div>

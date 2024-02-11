@@ -1,20 +1,23 @@
+"use client";
 import { inter } from "@/font/font";
 import { linkList } from "../utils/constants/linkList";
 import Link from "next/link";
 import Logo from "../../../../public/logo gradient.svg";
 import Image from "next/image";
+import { FooterForm } from "./components/FooterForm";
 
-const LINK_TYPOGRAPHY = `text-grey-disabled ${inter.className} hover:text-grey-light cursor-pointer lg:py-2`;
+const LINK_TYPOGRAPHY = `text-grey-disabled ${inter.className} hover:text-grey-light cursor-pointer`;
 
 export const Footer = () => {
     return (
-        <footer>
+        <footer className="lg:px-8 bottom-0 w-full mb-12">
             <div className="bg-black h-[2px] mt-6 w-full"></div>
-            <div className="grid grid-rows-3 grid-cols-1 lg:grid-cols-3 text-grey-classic bottom-0 gap-6 mt-20 w-full">
-                <div className="flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-x-4 order-last lg:order-none h-[150px] px-2">
+            <div className="flex flex-col gap-12 lg:grid lg:grid-cols-4 text-grey-classic bottom-0 mt-20">
+                <div className="flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-4 order-last lg:order-none px-2">
                     {linkList.map(
                         (item, index) =>
-                            item.label !== "Accueil" && (
+                            item.label !== "Accueil" &&
+                            item.label !== "Contact" && (
                                 <div key={index} className={LINK_TYPOGRAPHY}>
                                     <Link
                                         href={
@@ -55,13 +58,7 @@ export const Footer = () => {
                 <div className="flex justify-center">
                     <Image src={Logo} alt={"pointExe logo"} />
                 </div>
-                <div className="grid grid-rows-3 justify-self-center gap-2 order-first lg:order-none">
-                    <div className="text-center font-bold text-6xl">
-                        Contactez <span>nous</span>.
-                    </div>
-                    <div>contactForm</div>
-                    <button>button</button>
-                </div>
+                <FooterForm />
             </div>
         </footer>
     );
