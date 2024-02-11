@@ -1,4 +1,4 @@
-export const navbarLinks: {
+export const linkList: {
     label: string;
     path: string;
 }[] = [
