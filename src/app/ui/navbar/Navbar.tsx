@@ -7,7 +7,7 @@ import Logo from "../../../../public/logo gradient.svg";
 import BurgerMenu from "../../../../public/burger_menu_grey.svg";
 import BurgerMenuOpen from "../../../../public/burger_menu_white.svg";
 import { SubItems } from "./components/SubItems";
-import { navbarLinks } from "./constants/navbarLinks";
+import { linkList } from "../utils/constants/linkList";
 import { inter } from "@/font/font";
 import { toggleSelected } from "./utils/toggleSelected";
 
@@ -26,15 +26,13 @@ export const Navbar = () => {
                 setIsMenuOpened(false);
             }
         };
+        handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-        handleResize();
     }, []);
 
     useEffect(() => {
-        const newIndex = navbarLinks.findIndex(
-            (item) => item.path === pathname
-        );
+        const newIndex = linkList.findIndex((item) => item.path === pathname);
         setActiveIndex(newIndex !== -1 ? newIndex : 0);
     }, [pathname]);
     return (
@@ -45,7 +43,7 @@ export const Navbar = () => {
                 </div>
                 <div className="flex justify-between text-base text-grey-disabled lg:flex-grow px-6">
                     <div className="hidden lg:flex gap-4">
-                        {navbarLinks.map((item, index) => (
+                        {linkList.map((item, index) => (
                             <div
                                 key={index}
                                 className={`${index === activeIndex ? "text-grey-light" : "text-grey-disabled"} ${inter.className} font-semibold hover:text-grey-light cursor-pointer py-2`}
