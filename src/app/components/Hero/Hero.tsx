@@ -1,23 +1,28 @@
 "use client";
 import { SliderComponent } from "../slider/SliderComponent";
 import BgPurple from "../../../../public/bg_purple.png";
-import { TITLE_GRADIENT_TYPOGRAPHY } from "../../ui/utils/TITLE_GRADIENT_TYPOGRAPHY";
+import {
+    TITLE_GRADIENT_TYPOGRAPHY,
+    TITLE_TYPOGRAPHY,
+} from "../../ui/utils/typography";
 import { GradientButton } from "../../ui/buttons/GradientButton";
 import CheckSolid from "../../../../public/check-solid.svg";
 import Image from "next/image";
 import { LogoSection } from "./LogoSection";
+import Link from "next/link";
 
 export const Hero = () => {
     return (
         <>
             <div
-                className={`px-6 md:px-0 mb-24 pt-24 bg-cover bg-center grid grid-cols-1 -mx-6 lg:grid-cols-2`}
+                id="Hero"
+                className={`px-6 md:px-0 mb-24 pt-24 bg-cover bg-center grid grid-cols-1  lg:grid-cols-2`}
                 style={{
                     backgroundImage: `url(${BgPurple.src})`,
                 }}
             >
                 <div className="justify-self-center max-w-[448px]">
-                    <h1 className=" text-center lg:text-start text-4xl md:text-6xl font-bold text-grey-light pb-4">
+                    <h1 className={TITLE_TYPOGRAPHY}>
                         <span className={TITLE_GRADIENT_TYPOGRAPHY}>
                             Cabinet de{" "}
                         </span>
@@ -64,8 +69,10 @@ export const Hero = () => {
                             tout au long de la mission
                         </li>
                     </ul>
-                    <div className="flex justify-center lg:justify-start">
-                        <GradientButton label={"Nous contacter"} />
+                    <div className="flex justify-center lg:justify-start pb-6">
+                        <Link href={"/#footer"}>
+                            <GradientButton label={"Nous contacter"} />
+                        </Link>
                     </div>
                 </div>
                 <div className="justify-self-center pt-4 lg-pt-0">

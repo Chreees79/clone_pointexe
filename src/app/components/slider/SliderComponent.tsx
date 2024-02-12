@@ -3,6 +3,7 @@ import { GradientCard } from "@/app/ui/cards/GradientCard";
 import Michel from "../../../../public/Michel.jpg";
 import Quote from "../../../../public/Quote_white.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { TEXT_TYPOGRAPHY } from "@/app/ui/utils/typography";
 
 export const SliderComponent = () => {
     return (
@@ -12,7 +13,7 @@ export const SliderComponent = () => {
             </div>
             <div className="flex flex-col items-center mt-6 lg:mt-0">
                 <div className="max-w-[128px]">
-                    <GradientCard type="rounded">
+                    <GradientCard type="rounded" size="w-128px">
                         <div
                             style={{ borderRadius: "50%", overflow: "hidden" }}
                         >
@@ -25,7 +26,7 @@ export const SliderComponent = () => {
                     <Image src={Quote} alt={"Quote picture"} />
                 </div>
                 <div>
-                    <p className="text-base text-grey-light font-semibold text-center">
+                    <p className={`${TEXT_TYPOGRAPHY} text-center`}>
                         Mon expérience avec ThePointExe a été tout à fait
                         exceptionnelle.
                     </p>

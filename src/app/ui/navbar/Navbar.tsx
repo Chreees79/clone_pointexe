@@ -21,6 +21,23 @@ export const Navbar = () => {
         setIsMenuOpened(!isMenuOpened);
     };
 
+    const handleNavLink = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleNavItem = (
+        id: string,
+        index: number,
+        activeIndex: number,
+        setActiveIndex: React.Dispatch<React.SetStateAction<number>>
+    ) => {
+        toggleSelected(index, activeIndex, setActiveIndex);
+        handleNavLink(id);
+    };
+
     useEffect(() => {
         const handleResize = () => {
             const thresholdSize = 1024;
@@ -40,9 +57,9 @@ export const Navbar = () => {
     return (
         <>
             <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark p-4">
-                <div className="p-2">
+                <Link href="/#Hero" className="p-2">
                     <Image src={Logo} alt={"PointExe Logo"} />
-                </div>
+                </Link>
                 <div className="flex justify-between text-sm text-grey-disabled lg:flex-grow">
                     <div className="hidden lg:flex gap-4">
                         {linkList.map((item, index) => (
@@ -53,7 +70,8 @@ export const Navbar = () => {
                                 <Link
                                     href={item.path}
                                     onClick={() =>
-                                        toggleSelected(
+                                        handleNavItem(
+                                            item.id,
                                             index,
                                             activeIndex,
                                             setActiveIndex
