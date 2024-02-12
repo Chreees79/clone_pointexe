@@ -39,6 +39,22 @@ const config: Config = {
                 },
             },
         },
+        keyframes: {
+            scaleAnimation: {
+                "0%": {
+                    transform: "scale(0.90)",
+                },
+                " 50%": {
+                    transform: "scale(0.95)",
+                },
+                "100%": {
+                    transform: "scale(1)",
+                },
+            },
+        },
+        animation: {
+            scaleAnimation: "scaleAnimation 700ms ease-in-out",
+        },
     },
     plugins: [],
 };
