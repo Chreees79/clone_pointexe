@@ -1,11 +1,10 @@
 "use client";
-import { inter } from "@/font/font";
 import { useState } from "react";
 import { IData } from "../types/IData";
 import { postContactMail } from "../utils/postContactMail";
 import { PopUpConfirmation } from "./PopUpConfirmation";
+import { TITLE_GRADIENT_TYPOGRAPHY } from "../../utils/TITLE_GRADIENT_TYPOGRAPHY";
 
-const TITLE_GRADIENT_TYPOGRAPHY = `${inter.className} bg-gradient-to-b from-blue-dark to-blue-light text-transparent bg-clip-text`;
 const INPUT_STYLE =
     "bg-input-bg hover:bg-input-hover focus:outline-none focus:border-grey-disabled focus:border-[1px] text-grey-classic text-sm px-6";
 
