@@ -19,7 +19,7 @@ export const SubItems = ({
     };
 
     return (
-        <div className="sticky z-40 grid grid-cols-1 gap-y-4 mt-4 text-grey-classic">
+        <div className="fixed z-40 grid grid-cols-1 gap-y-4 py-4 text-grey-classic bg-background-dark w-full">
             {linkList.map((item, index) => (
                 <div
                     key={index}

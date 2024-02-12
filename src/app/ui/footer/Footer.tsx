@@ -6,11 +6,11 @@ import Logo from "../../../../public/logo gradient.svg";
 import Image from "next/image";
 import { FooterForm } from "./components/FooterForm";
 
-const LINK_TYPOGRAPHY = `text-grey-disabled ${inter.className} hover:text-grey-light cursor-pointer`;
+const LINK_TYPOGRAPHY = `text-grey-disabled ${inter.className} hover:text-grey-light text-sm cursor-pointer`;
 
 export const Footer = () => {
     return (
-        <footer className="lg:px-8 bottom-0 w-full mb-12">
+        <footer id="footer" className="lg:px-8 bottom-0 w-full mb-12">
             <div className="bg-black h-[2px] mt-6 w-full"></div>
             <div className="flex flex-col gap-12 lg:grid lg:grid-cols-4 text-grey-classic bottom-0 mt-20">
                 <div className="flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-4 order-last lg:order-none px-2">
