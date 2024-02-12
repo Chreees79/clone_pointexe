@@ -1,6 +1,6 @@
 "use client";
 import { useInView } from "@react-spring/web";
-import { Hero } from "./Hero";
+import { Hero } from "./Hero/Hero";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -8,7 +8,7 @@ export const HomeComponent = () => {
     return (
         <div
             ref={ref}
-            className={` ${inView ? "animate-scaleAnimation" : ""}`}
+            className={` ${inView ? "animate-scaleAnimation" : ""} px-6`}
             style={{
                 opacity: inView ? 1 : 0,
                 scale: inView ? 1 : 1,
