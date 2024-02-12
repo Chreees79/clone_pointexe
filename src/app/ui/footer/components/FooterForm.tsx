@@ -3,7 +3,7 @@ import { useState } from "react";
 import { IData } from "../types/IData";
 import { postContactMail } from "../utils/postContactMail";
 import { PopUpConfirmation } from "./PopUpConfirmation";
-import { TITLE_GRADIENT_TYPOGRAPHY } from "../../utils/TITLE_GRADIENT_TYPOGRAPHY";
+import { TITLE_GRADIENT_TYPOGRAPHY } from "../../utils/typography";
 
 const INPUT_STYLE =
     "bg-input-bg hover:bg-input-hover focus:outline-none focus:border-grey-disabled focus:border-[1px] text-grey-classic text-sm px-6";
@@ -80,7 +80,7 @@ export const FooterForm = () => {
             </div>
             <div className="flex justify-end py-4">
                 <button
-                    className="flex justify-center px-4 py-2 font-semiBold rounded-full cursor-pointer border-2  hover:bg-almost_white hover:text-almost_black hover:font-semibold transition-all duration-700 w-[105px]"
+                    className="flex justify-center px-4 py-2 font-semiBold rounded-full cursor-pointer border-2 hover:bg-almost_white hover:text-almost_black hover:font-semibold transition-all duration-700 w-[105px]"
                     onClick={handleSubmit}
                 >
                     Envoyer
