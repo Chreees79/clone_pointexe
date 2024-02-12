@@ -1,23 +1,34 @@
-import { X } from "lucide-react";
+import { useEffect } from "react";
 
 interface IPopUpConfirmationProps {
     setIsFormSend: React.Dispatch<React.SetStateAction<boolean>>;
+    helperMessage: string;
 }
 
 export const PopUpConfirmation = ({
     setIsFormSend,
+    helperMessage,
 }: IPopUpConfirmationProps) => {
+    useEffect(() => {
+        let timer: NodeJS.Timeout;
+        if (helperMessage?.length > 0) {
+            timer = setTimeout(() => {
+                setIsFormSend(false);
+            }, 1000);
+        }
+        return () => clearTimeout(timer);
+    }, [helperMessage, setIsFormSend]);
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-            <div className="bg-blue-light rounded-lg p-8 text-bold text-4xl flex flex-col items-center gap-4 md:flex-row md:justify-between relative w-[500px] mx-6">
-                <p className="text-center">Message envoyé !</p>
+            {helperMessage ? (
                 <div
-                    onClick={() => setIsFormSend(false)}
-                    className="md:absolute md:top-2 md:right-2 order-last md:order-none"
+                    className={`${helperMessage === "Message envoyé !" ? "bg-gradient-to-r from-blue-light to-blue-dark " : "bg-gradient-to-r from-orange-600 to-orange-300 text-almost_black"} rounded-lg p-8 text-bold text-4xl gap-4 relative w-[500px] mx-6`}
                 >
-                    <X width={40} height={40} className="cursor-pointer" />
+                    <p className="text-center">{helperMessage}</p>
                 </div>
-            </div>
+            ) : (
+                <p className="text-grey-light text-xl">en attente....</p>
+            )}
         </div>
     );
 };
