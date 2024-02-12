@@ -11,6 +11,7 @@ const INPUT_STYLE =
 
 export const FooterForm = () => {
     const [isFormSend, setIsFormSend] = useState(false);
+    const [helperMessage, setHelperMessage] = useState("");
     const [formData, setFormData] = useState<IData>({
         name: "",
         email: "",
@@ -26,7 +27,7 @@ export const FooterForm = () => {
 
     const handleSubmit = () => {
         setIsFormSend(true);
-        postContactMail({ formData });
+        postContactMail({ formData, setHelperMessage });
         setFormData({
             name: "",
             email: "",
@@ -42,7 +43,10 @@ export const FooterForm = () => {
             </div>
             <div className="flex flex-col gap-[1px] mt-12 ">
                 {isFormSend && (
-                    <PopUpConfirmation setIsFormSend={setIsFormSend} />
+                    <PopUpConfirmation
+                        setIsFormSend={setIsFormSend}
+                        helperMessage={helperMessage}
+                    />
                 )}
                 <div>
                     <input

@@ -10,6 +10,7 @@ import { SubItems } from "./components/SubItems";
 import { linkList } from "../utils/constants/linkList";
 import { inter } from "@/font/font";
 import { toggleSelected } from "./utils/toggleSelected";
+import { GradientButton } from "../buttons/GradientButton";
 
 export const Navbar = () => {
     const pathname = usePathname();
@@ -19,6 +20,7 @@ export const Navbar = () => {
     const handleBurgerMenu = () => {
         setIsMenuOpened(!isMenuOpened);
     };
+
     useEffect(() => {
         const handleResize = () => {
             const thresholdSize = 1024;
@@ -37,11 +39,11 @@ export const Navbar = () => {
     }, [pathname]);
     return (
         <>
-            <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark">
+            <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark p-4">
                 <div className="p-2">
                     <Image src={Logo} alt={"PointExe Logo"} />
                 </div>
-                <div className="flex justify-between text-base text-grey-disabled lg:flex-grow px-6">
+                <div className="flex justify-between text-sm text-grey-disabled lg:flex-grow px-6">
                     <div className="hidden lg:flex gap-4">
                         {linkList.map((item, index) => (
                             <div
@@ -91,7 +93,9 @@ export const Navbar = () => {
                         )}
                     </button>
                 </div>
-                <button className="hidden lg:block px-2">Contacter</button>
+                <Link href="/#footer" className="hidden lg:flex">
+                    <GradientButton label="Nous contacter" />
+                </Link>
             </nav>
             {isMenuOpened && (
                 <div className="w-full">
