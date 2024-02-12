@@ -19,6 +19,10 @@ export default function RootLayout({
                 <Navbar />
                 <div className=" md:p-6">{children}</div>
                 <Footer />
+                <p className=" text-center italic text-red-700 text-base font-semibold pb-4">
+                    Copie du site PointExe dans une visée de démo pédagogique //
+                    Copy of PointExe Website for demonstration purposes
+                </p>
             </body>
         </html>
     );
