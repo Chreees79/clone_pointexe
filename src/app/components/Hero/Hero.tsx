@@ -15,6 +15,7 @@ export const Hero = () => {
     return (
         <>
             <div
+                id="Hero"
                 className={`px-6 md:px-0 mb-24 pt-24 bg-cover bg-center grid grid-cols-1  lg:grid-cols-2`}
                 style={{
                     backgroundImage: `url(${BgPurple.src})`,
