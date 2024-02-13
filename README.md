@@ -6,7 +6,9 @@
 </div>
   
 <div align="center">
-# Copie du site [[le site de PointExe](https://www.thepointexe.fr/) à des fins pédagogiques et de démonstration // copy of the PointExe website for demonstration purposes
+# Copie du site Point Exe à des fins pédagogiques et de démonstration // copy of the PointExe website for demonstration purposes
+
+Ici le lien du site // the website link: [[le site de PointExe](https://www.thepointexe.fr/)
 
 ## Ce challenge personnel a été fait en deux jours ! // This personal challenge was completed in two days!
 
