@@ -5,6 +5,7 @@ import { Customers } from "./customers/Customers";
 import { ProcessSection } from "./customers/ProcessSection";
 import { UseCaseSection } from "./customers/UseCaseSection";
 import { TestimonySection } from "./customers/TestimonySection";
+import { CommunitySection } from "./CommunitySection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -12,6 +13,7 @@ export const HomeComponent = () => {
     const [ref3, inView3] = useInView();
     const [ref4, inView4] = useInView();
     const [ref5, inView5] = useInView();
+    const [ref6, inView6] = useInView();
 
     return (
         <>
@@ -30,8 +32,8 @@ export const HomeComponent = () => {
                 ref={ref2}
                 className={` ${inView2 ? "animate-scaleAnimation" : ""} px-6`}
                 style={{
-                    opacity: inView ? 1 : 0.85,
-                    scale: inView ? 1 : 1,
+                    opacity: inView2 ? 1 : 0.85,
+                    scale: inView2 ? 1 : 1,
                     transition: "2s ease-in-out",
                 }}
             >
@@ -63,12 +65,23 @@ export const HomeComponent = () => {
                 ref={ref5}
                 className={` ${inView5 ? "animate-scaleAnimation" : ""} px-6`}
                 style={{
-                    opacity: inView4 ? 1 : 0.85,
-                    scale: inView4 ? 1 : 1,
+                    opacity: inView5 ? 1 : 0.85,
+                    scale: inView5 ? 1 : 1,
                     transition: "2s ease-in-out",
                 }}
             >
                 <TestimonySection />
+            </div>
+            <div
+                ref={ref6}
+                className={` ${inView6 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView6 ? 1 : 0.85,
+                    scale: inView6 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <CommunitySection />
             </div>
         </>
     );

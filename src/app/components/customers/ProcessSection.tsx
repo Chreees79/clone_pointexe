@@ -4,7 +4,7 @@ import {
     H3_TYPOGRAPHY,
     TITLE_GRADIENT_TYPOGRAPHY,
 } from "@/app/ui/utils/typography";
-import { processList } from "./constants/processList";
+import { processList } from "../constants/processList";
 import { useInView } from "@react-spring/web";
 
 export const ProcessSection = () => {

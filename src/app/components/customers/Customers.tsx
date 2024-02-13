@@ -45,7 +45,10 @@ export const Customers = () => {
     ];
     return (
         <div>
-            <div id="Services" className="bg-black h-[2px] mt-6 w-full"></div>
+            <div
+                id="Services"
+                className=" scroll-smooth scroll-mt-[108px] bg-black h-[2px] mt-6 w-full"
+            ></div>
             <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-4 lg:px-6 mt-12">
                 <div className="lg:col-span-3 lg:order-first lg:justify-self-center lg:items-center ">
                     <div className="flex justify-center">
