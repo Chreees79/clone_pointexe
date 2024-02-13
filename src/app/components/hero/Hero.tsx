@@ -1,5 +1,5 @@
 "use client";
-import { SliderComponent } from "./slider/SliderComponent";
+import { SliderComponent } from "./SliderComponent";
 import BgPurple from "../../../../public/bg_purple.png";
 import {
     TITLE_GRADIENT_TYPOGRAPHY,
