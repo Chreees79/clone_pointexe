@@ -1,6 +1,6 @@
 "use client";
 import { inter } from "@/font/font";
-import { linkList } from "../utils/constants/linkList";
+import { linkList } from "../navbar/constants/linkList";
 import Link from "next/link";
 import Logo from "../../../../public/logo gradient.svg";
 import Image from "next/image";
@@ -10,7 +10,10 @@ const LINK_TYPOGRAPHY = `text-grey-disabled ${inter.className} hover:text-grey-l
 
 export const Footer = () => {
     return (
-        <footer id="footer" className="lg:px-8 bottom-0 w-full mb-12">
+        <footer
+            id="footer"
+            className=" scroll-smooth scroll-mt-[100px] lg:px-8 bottom-0 w-full mb-12"
+        >
             <div className="bg-black h-[2px] mt-6 w-full"></div>
             <div className="flex flex-col gap-12 lg:grid lg:grid-cols-4 text-grey-classic bottom-0 mt-20">
                 <div className="flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-4 order-last lg:order-none px-2">

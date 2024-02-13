@@ -7,7 +7,7 @@ import Logo from "../../../../public/logo gradient.svg";
 import BurgerMenu from "../../../../public/burger_menu_grey.svg";
 import BurgerMenuOpen from "../../../../public/burger_menu_white.svg";
 import { SubItems } from "./components/SubItems";
-import { linkList } from "../utils/constants/linkList";
+import { linkList } from "./constants/linkList";
 import { inter } from "@/font/font";
 import { toggleSelected } from "./utils/toggleSelected";
 import { GradientButton } from "../buttons/GradientButton";
