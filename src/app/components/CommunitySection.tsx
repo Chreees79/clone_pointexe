@@ -83,11 +83,11 @@ export const CommunitySection = () => {
                 >
                     Les avantages d&#39;intégrer notre communauté
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-24 md:grid-rows-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-24 md:grid-rows-2 lg:max-w-[1200px]">
                     {integrationCommunityList.map((item, index) => (
                         <div
                             key={index}
-                            className="flex flex-col gap-2 leading-6 mt-6 border-[1px] border-almost_black border-b-grey-disabled border-l-grey-disabled pl-4 pb-2"
+                            className="flex flex-col gap-2 leading-6 mt-6 border-[1px] border-almost_black border-b-grey-disabled border-l-grey-disabled  pl-4 pb-2"
                         >
                             <Image
                                 src={item.image}
