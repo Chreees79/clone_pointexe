@@ -1,14 +1,14 @@
 "use client";
 import { inter } from "@/font/font";
 import Image from "next/image";
-import Computer from "../../../public/computer.jpeg";
-import BgShapeSimple from "../../../public/bg_shapes_simple.png";
+import Computer from "../../../../public/computer.jpeg";
+import BgShapeSimple from "../../../../public/bg_shapes_simple.png";
 import {
     TITLE_GRADIENT_TYPOGRAPHY,
     TITLE_TYPOGRAPHY,
-} from "../ui/utils/typography";
-import { communityList } from "./constants/communityList";
-import { integrationCommunityList } from "./constants/integrationCommunityList";
+} from "../../ui/utils/typography";
+import { communityList } from "../constants/communityList";
+import { integrationCommunityList } from "../constants/integrationCommunityList";
 import { useInView } from "@react-spring/web";
 
 export const CommunitySection = () => {

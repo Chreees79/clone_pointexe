@@ -4,10 +4,11 @@ import { Hero } from "./hero/Hero";
 import { ProcessSection } from "./customers/ProcessSection";
 import { UseCaseSection } from "./customers/UseCaseSection";
 import { TestimonySection } from "./customers/TestimonySection";
-import { CommunitySection } from "./CommunitySection";
-import { TestimonyConsultantsSection } from "./TestimonyConsultantsSection";
+import { CommunitySection } from "./consultants/CommunitySection";
+import { TestimonyConsultantsSection } from "./consultants/TestimonyConsultantsSection";
 import { CustomersSection } from "./customers/CustomersSection";
-import { TechnologiesSection } from "./customers/TechnologiesSection";
+import { TechnologiesSection } from "./TechnologiesSection";
+import { ContactUsSection } from "./ContactUsSection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -18,6 +19,7 @@ export const HomeComponent = () => {
     const [ref6, inView6] = useInView();
     const [ref7, inView7] = useInView();
     const [ref8, inView8] = useInView();
+    const [ref9, inView9] = useInView();
 
     return (
         <>
@@ -108,6 +110,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <TechnologiesSection />
+            </div>
+            <div
+                ref={ref9}
+                className={` ${inView9 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView9 ? 1 : 0,
+                    scale: inView9 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <ContactUsSection />
             </div>
         </>
     );
