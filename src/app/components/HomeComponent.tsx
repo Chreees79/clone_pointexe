@@ -1,12 +1,13 @@
 "use client";
 import { useInView } from "@react-spring/web";
 import { Hero } from "./hero/Hero";
-import { Customers } from "./customers/Customers";
 import { ProcessSection } from "./customers/ProcessSection";
 import { UseCaseSection } from "./customers/UseCaseSection";
 import { TestimonySection } from "./customers/TestimonySection";
 import { CommunitySection } from "./CommunitySection";
 import { TestimonyConsultantsSection } from "./TestimonyConsultantsSection";
+import { CustomersSection } from "./customers/CustomersSection";
+import { TechnologiesSection } from "./customers/TechnologiesSection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -16,6 +17,7 @@ export const HomeComponent = () => {
     const [ref5, inView5] = useInView();
     const [ref6, inView6] = useInView();
     const [ref7, inView7] = useInView();
+    const [ref8, inView8] = useInView();
 
     return (
         <>
@@ -39,7 +41,7 @@ export const HomeComponent = () => {
                     transition: "2s ease-in-out",
                 }}
             >
-                <Customers />
+                <CustomersSection />
             </div>
             <div
                 ref={ref3}
@@ -95,6 +97,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <TestimonyConsultantsSection />
+            </div>
+            <div
+                ref={ref8}
+                className={` ${inView8 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView8 ? 1 : 0.85,
+                    scale: inView8 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <TechnologiesSection />
             </div>
         </>
     );

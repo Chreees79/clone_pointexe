@@ -12,7 +12,7 @@ import Clock from "../../../../public/clock-solid.svg";
 import Lock from "../../../../public/lock-solid.svg";
 import UserGroup from "../../../../public/userGroup-solid.svg";
 
-export const Customers = () => {
+export const CustomersSection = () => {
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
     const [ref3, inView3] = useInView();
