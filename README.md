@@ -10,6 +10,8 @@
   
 # Copie du site Point Exe à des fins pédagogiques et de démonstration // copy of the PointExe website for demonstration purposes
 <br>
+Il faut savoir que le formulaire de contact est complètement opérationnel et est soumis à des règles de validation // the contact form is fully operational and is subject to validation rules
+<br>
 Ici le lien du site // the website link: 
 
 [le site de PointExe](https://www.thepointexe.fr/)
