@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { GradientCard } from "@/app/ui/cards/GradientCard";
-import Michel from "../../../../../public/Michel.jpg";
-import Quote from "../../../../../public/Quote_white.svg";
+import Michel from "../../../../public/Michel.jpg";
+import Quote from "../../../../public/Quote_white.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { TEXT_TYPOGRAPHY } from "@/app/ui/utils/typography";
 
