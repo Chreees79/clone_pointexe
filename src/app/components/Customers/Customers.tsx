@@ -47,16 +47,17 @@ export const Customers = () => {
         <div>
             <div id="Services" className="bg-black h-[2px] mt-6 w-full"></div>
             <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-4 lg:px-6 mt-12">
-                <div
-                    className={`${TITLE_TYPOGRAPHY} lg:col-span-3 lg:order-first lg:justify-self-center lg:items-center`}
-                >
-                    <h1 className="text-center">
-                        Pour nos{" "}
-                        <span className={TITLE_GRADIENT_TYPOGRAPHY}>
-                            clients
-                        </span>
-                        .
-                    </h1>
+                <div className="lg:col-span-3 lg:order-first lg:justify-self-center lg:items-center ">
+                    <div className="flex justify-center">
+                        <h1 className={`${TITLE_TYPOGRAPHY} text-center`}>
+                            Pour nos{" "}
+                            <span className={TITLE_GRADIENT_TYPOGRAPHY}>
+                                clients
+                            </span>
+                            .
+                        </h1>
+                    </div>
+
                     <h2 className={H2_TYPOGRAPHY}>
                         Nous combinons une expertise technique pointue et une
                         action rapide. Notre mission ? Concrétiser vos missions
@@ -77,7 +78,7 @@ export const Customers = () => {
                         <div className="flex items-center  max-w-[70px]">
                             <GradientCard
                                 type="rounded"
-                                size="64px"
+                                size="w-64px"
                                 padding="p-5"
                             >
                                 <Image src={item.image} alt={item.alt} />
