@@ -10,14 +10,22 @@
   
 # Copie du site Point Exe à des fins pédagogiques et de démonstration // copy of the PointExe website for demonstration purposes
 <br>
-Ici le lien du site // the website link: [[le site de PointExe](https://www.thepointexe.fr/)
+Ici le lien du site // the website link: 
+
+[[le site de PointExe](https://www.thepointexe.fr/)
+
 <br>
 <br>
+
 ## Ce challenge personnel a été fait en deux jours ! // This personal challenge was completed in two days!
+
 <br>
-  Ici vous pouvez trouver les liens vers mon trello pour gérer mes tâches de travail // Here, my trello link to see how I managed my tasks : [trello copie PointExe](https://trello.com/b/K7wCZaiI/clone-pointexe)
+  Ici vous pouvez trouver les liens vers mon trello pour gérer mes tâches de travail // Here, my trello link to see how I managed my tasks : 
+  
+  [trello copie PointExe](https://trello.com/b/K7wCZaiI/clone-pointexe)
 
   D'ailleurs, ce projet a été déployé en production sur Vercel: // Moreover, this project was deployed on Vercel:
+  
   [Copy of PointExe](https://clone-pointexe.vercel.app/)
 </div>
 <br>
@@ -30,24 +38,22 @@ Ici le lien du site // the website link: [[le site de PointExe](https://www.thep
 <br>
 
 <h4 align="center">Languages</h4>
-
-<p align="center">
-<a href="https://reactjs.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="react logo" width="40" height="40"/></a>
-  <a href="https://nextjs.org/" target="_blank"> <img src="https://upload.vectorlogo.zone/logos/nextjs/images/60eff509-53dd-4280-92e7-7318fa02e934.svg" target="_blank"> 
-    </a>
-  <a href="https://www.typescriptlang.org/"><img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="typescript logo" width="40" height="40"/></a>
-<a href="https://tailwindcss.com" target="_blank"> <img src="https://www.vectorlogo.zone/util/preview.html?image=/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind logo" width="45" height="40"/> </a>
+- React.js
+- Next.js
+- TypeScript
+- TailwindCSS
 
 </p>
 <br>
 
 <h4 align="center">Autres</h4>
 
-<p align="center">
-<a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux logo" width="40" height="40"/></a>
-<a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git logo" width="40" height="40"/></a>
-<a href="https://trello.com/fr" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" alt="trello logo" width="60" height="60"/></a>
-</p>
+- trello
+- Git
+- Github
+- Mac
+- Vercel
+
 <br>
 </div>
 
