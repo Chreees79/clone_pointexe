@@ -12,7 +12,7 @@
 <br>
 Ici le lien du site // the website link: 
 
-[[le site de PointExe](https://www.thepointexe.fr/)
+[le site de PointExe](https://www.thepointexe.fr/)
 
 <br>
 <br>
@@ -38,6 +38,7 @@ Ici le lien du site // the website link:
 <br>
 
 <h4 align="center">Languages</h4>
+
 - React.js
 - Next.js
 - TypeScript
