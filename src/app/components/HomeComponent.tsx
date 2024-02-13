@@ -3,7 +3,7 @@ import { useInView } from "@react-spring/web";
 import { Hero } from "./hero/Hero";
 import { Customers } from "./customers/Customers";
 import { ProcessSection } from "./customers/ProcessSection";
-//build
+
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
