@@ -7,12 +7,14 @@
 <br>
 <br>
 <div align="center">
+  
 # Copie du site Point Exe à des fins pédagogiques et de démonstration // copy of the PointExe website for demonstration purposes
-
+<br>
 Ici le lien du site // the website link: [[le site de PointExe](https://www.thepointexe.fr/)
 <br>
+<br>
 ## Ce challenge personnel a été fait en deux jours ! // This personal challenge was completed in two days!
-
+<br>
   Ici vous pouvez trouver les liens vers mon trello pour gérer mes tâches de travail // Here, my trello link to see how I managed my tasks : [trello copie PointExe](https://trello.com/b/K7wCZaiI/clone-pointexe)
 
   D'ailleurs, ce projet a été déployé en production sur Vercel: // Moreover, this project was deployed on Vercel:
@@ -22,6 +24,7 @@ Ici le lien du site // the website link: [[le site de PointExe](https://www.thep
 <hr>
 
 <br>
+
 ## <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="60"> Technologies et Outils utilisés pour ce projet...  // technologies and languages used for this project...
 
 <br>
