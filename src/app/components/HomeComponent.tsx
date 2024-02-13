@@ -1,8 +1,8 @@
 "use client";
 import { useInView } from "@react-spring/web";
-import { Hero } from "./hero/Hero";
-import { Customers } from "./customers/Customers";
-import { ProcessSection } from "./customers/ProcessSection";
+import { Hero } from "./Hero/Hero";
+import { Customers } from "./Customers/Customers";
+import { ProcessSection } from "./Customers/ProcessSection";
 //build
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
