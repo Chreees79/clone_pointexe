@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 import { useInView } from "@react-spring/web";
 import { Hero } from "./hero/Hero";
 import { Customers } from "./customers/Customers";
@@ -47,3 +47,4 @@ export const HomeComponent = () => {
         </>
     );
 };
+ */
