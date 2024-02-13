@@ -6,6 +6,7 @@ import { ProcessSection } from "./customers/ProcessSection";
 import { UseCaseSection } from "./customers/UseCaseSection";
 import { TestimonySection } from "./customers/TestimonySection";
 import { CommunitySection } from "./CommunitySection";
+import { TestimonyConsultantsSection } from "./TestimonyConsultantsSection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -14,6 +15,7 @@ export const HomeComponent = () => {
     const [ref4, inView4] = useInView();
     const [ref5, inView5] = useInView();
     const [ref6, inView6] = useInView();
+    const [ref7, inView7] = useInView();
 
     return (
         <>
@@ -63,7 +65,7 @@ export const HomeComponent = () => {
             </div>
             <div
                 ref={ref5}
-                className={` ${inView5 ? "animate-scaleAnimation" : ""} px-6`}
+                className={` ${inView6 ? "animate-scaleAnimation" : ""} px-6`}
                 style={{
                     opacity: inView5 ? 1 : 0.85,
                     scale: inView5 ? 1 : 1,
@@ -82,6 +84,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <CommunitySection />
+            </div>
+            <div
+                ref={ref7}
+                className={` ${inView7 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView7 ? 1 : 0.85,
+                    scale: inView7 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <TestimonyConsultantsSection />
             </div>
         </>
     );
