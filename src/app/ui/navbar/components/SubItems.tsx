@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { linkList } from "../../utils/constants/linkList";
+import { linkList } from "../constants/linkList";
 import { toggleSelected } from "../utils/toggleSelected";
 
 interface ISubItemsProps {
