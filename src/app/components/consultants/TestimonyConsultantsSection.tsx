@@ -1,9 +1,9 @@
 "use client";
 import { GradientCard } from "@/app/ui/cards/GradientCard";
 import Image from "next/image";
-import Quote from "../../../public/Quote_white.svg";
-import Mamadou from "../../../public/Mamadou.jpg";
-import Emmanuel from "../../../public/Emmanuel.jpg";
+import Quote from "../../../../public/Quote_white.svg";
+import Mamadou from "../../../../public/Mamadou.jpg";
+import Emmanuel from "../../../../public/Emmanuel.jpg";
 
 import {
     H3_TYPOGRAPHY,
