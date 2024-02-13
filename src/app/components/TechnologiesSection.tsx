@@ -5,8 +5,8 @@ import {
     TITLE_TYPOGRAPHY,
 } from "@/app/ui/utils/typography";
 import Image from "next/image";
-import WorldMap from "../../../../public/world_map.png";
-import { TechnologiesList } from "../constants/TechnologiesList";
+import WorldMap from "../../../public/world_map.png";
+import { TechnologiesList } from "./constants/TechnologiesList";
 import { inter } from "@/font/font";
 
 export const TechnologiesSection = () => {
