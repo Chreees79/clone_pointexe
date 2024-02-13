@@ -1,8 +1,8 @@
 import Image from "next/image";
 import BgProcess from "../../../../public/background_process.png";
 import {
+    H3_TYPOGRAPHY,
     TITLE_GRADIENT_TYPOGRAPHY,
-    TITLE_TYPOGRAPHY,
 } from "@/app/ui/utils/typography";
 import { processList } from "./constants/processList";
 import { useInView } from "@react-spring/web";
@@ -16,9 +16,7 @@ export const ProcessSection = () => {
                 className="absolute inset-0 w-full h-full object-cover"
                 alt="Image de fond"
             />
-            <h1
-                className={`${TITLE_TYPOGRAPHY} text-xl md:text-4xl text-center`}
-            >
+            <h1 className={H3_TYPOGRAPHY}>
                 Notre{" "}
                 <span
                     className={`${TITLE_GRADIENT_TYPOGRAPHY} text-xl md:text-4xl`}
