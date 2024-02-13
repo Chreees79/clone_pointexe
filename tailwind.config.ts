@@ -37,6 +37,9 @@ const config: Config = {
                     bg: "#171e25",
                     hover: "#1e252c",
                 },
+                card: {
+                    bg: "#171e25",
+                },
             },
         },
         keyframes: {

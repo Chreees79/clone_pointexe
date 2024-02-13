@@ -4,12 +4,14 @@ import { Hero } from "./hero/Hero";
 import { Customers } from "./customers/Customers";
 import { ProcessSection } from "./customers/ProcessSection";
 import { UseCaseSection } from "./customers/UseCaseSection";
+import { TestimonySection } from "./customers/TestimonySection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
     const [ref3, inView3] = useInView();
     const [ref4, inView4] = useInView();
+    const [ref5, inView5] = useInView();
 
     return (
         <>
@@ -56,6 +58,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <UseCaseSection />
+            </div>
+            <div
+                ref={ref5}
+                className={` ${inView5 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView4 ? 1 : 0.85,
+                    scale: inView4 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <TestimonySection />
             </div>
         </>
     );
