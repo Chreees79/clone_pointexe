@@ -8,7 +8,7 @@ export const HomeComponent = () => {
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
     const [ref3, inView3] = useInView();
-
+    //build
     return (
         <>
             <div
