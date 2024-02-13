@@ -2,10 +2,12 @@
 import { useInView } from "@react-spring/web";
 import { Hero } from "./Hero/Hero";
 import { Customers } from "./Customers/Customers";
-
+import { ProcessSection } from "./Customers/ProcessSection";
+//build
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
+    const [ref3, inView3] = useInView();
 
     return (
         <>
@@ -30,6 +32,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <Customers />
+            </div>
+            <div
+                ref={ref3}
+                className={` ${inView3 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView ? 1 : 0.85,
+                    scale: inView ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <ProcessSection />
             </div>
         </>
     );
