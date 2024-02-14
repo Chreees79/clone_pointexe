@@ -9,6 +9,7 @@ import { TestimonyConsultantsSection } from "./consultants/TestimonyConsultantsS
 import { CustomersSection } from "./customers/CustomersSection";
 import { TechnologiesSection } from "./TechnologiesSection";
 import { ContactUsSection } from "./ContactUsSection";
+import { ExpertisesSection } from "./Expertises/ExpertisesSection";
 
 export const HomeComponent = () => {
     const [ref, inView] = useInView();
@@ -20,6 +21,7 @@ export const HomeComponent = () => {
     const [ref7, inView7] = useInView();
     const [ref8, inView8] = useInView();
     const [ref9, inView9] = useInView();
+    const [ref10, inView10] = useInView();
 
     return (
         <>
@@ -121,6 +123,17 @@ export const HomeComponent = () => {
                 }}
             >
                 <ContactUsSection />
+            </div>
+            <div
+                ref={ref10}
+                className={` ${inView10 ? "animate-scaleAnimation" : ""} px-6`}
+                style={{
+                    opacity: inView10 ? 1 : 0,
+                    scale: inView10 ? 1 : 1,
+                    transition: "2s ease-in-out",
+                }}
+            >
+                <ExpertisesSection />
             </div>
         </>
     );
