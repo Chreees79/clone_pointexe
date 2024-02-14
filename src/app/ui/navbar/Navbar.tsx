@@ -64,7 +64,7 @@ export const Navbar = () => {
                     <Image src={Logo} alt={"PointExe Logo"} />
                 </Link>
                 <div className="flex justify-between text-sm text-grey-disabled lg:flex-grow">
-                    <div className={`hidden lg:flex gap-4 `}>
+                    <div className="hidden lg:flex gap-4">
                         {linkList.map((item, index) => (
                             <div
                                 key={index}
@@ -87,7 +87,7 @@ export const Navbar = () => {
                         ))}
                     </div>
                     <div
-                        className={`flex justify-center gap-4 items-center font-bold  ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "order-first ml-12" : "mx-auto"} `}
+                        className={`flex justify-center gap-4 items-center font-bold ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "order-first ml-12" : "mx-auto"} `}
                     >
                         <p
                             className={`${inter.className} text-white underline`}
@@ -97,31 +97,33 @@ export const Navbar = () => {
                         <p>EN</p>
                     </div>
                 </div>
-                <div className="lg:hidden px-6">
-                    <button onClick={handleBurgerMenu}>
-                        {isMenuOpened ? (
-                            <Image
-                                src={BurgerMenuOpen}
-                                alt="menu burger"
-                                width={24}
-                                height={24}
-                            />
-                        ) : (
-                            <Image
-                                src={BurgerMenu}
-                                alt="menu burger"
-                                width={24}
-                                height={24}
-                            />
-                        )}
-                    </button>
-                </div>
-                <div
-                    className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""}`}
-                >
-                    <Link href="/#footer" className="hidden lg:flex">
-                        <GradientButton label="Nous contacter" />
-                    </Link>
+                <div>
+                    <div className="lg:hidden px-6">
+                        <button onClick={handleBurgerMenu}>
+                            {isMenuOpened ? (
+                                <Image
+                                    src={BurgerMenuOpen}
+                                    alt="menu burger"
+                                    width={24}
+                                    height={24}
+                                />
+                            ) : (
+                                <Image
+                                    src={BurgerMenu}
+                                    alt="menu burger"
+                                    width={24}
+                                    height={24}
+                                />
+                            )}
+                        </button>
+                    </div>
+                    <div
+                        className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""}`}
+                    >
+                        <Link href="/#footer" className="hidden lg:flex">
+                            <GradientButton label="Nous contacter" />
+                        </Link>
+                    </div>
                 </div>
             </nav>
             {isMenuOpened && (
