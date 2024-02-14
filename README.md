@@ -19,7 +19,7 @@ Ici le lien du site // the website link:
 <br>
 <br>
 
-## Ce challenge personnel a été fait en deux jours ! // This personal challenge was completed in two days!
+## Ce challenge personnel a été fait en trois jours ! // This personal challenge was completed in three days!
 
 <br>
   Ici vous pouvez trouver les liens vers mon trello pour gérer mes tâches de travail // Here, my trello link to see how I managed my tasks : 
