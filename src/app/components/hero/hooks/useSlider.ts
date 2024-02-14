@@ -5,12 +5,12 @@ export const useSlider = () => {
 
     const scrollToLeft = () => {
         if (menuContainerRef.current) {
-            menuContainerRef.current.scrollLeft -= 332;
+            menuContainerRef.current.scrollLeft -= 345;
         }
     };
     const scrollToRight = () => {
         if (menuContainerRef.current) {
-            menuContainerRef.current.scrollLeft += 332;
+            menuContainerRef.current.scrollLeft += 345;
         }
     };
 
