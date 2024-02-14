@@ -57,15 +57,18 @@ export const Navbar = () => {
     return (
         <>
             <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark p-4">
-                <Link href="/#Hero" className="p-2">
+                <Link
+                    href="/#Hero"
+                    className={` ${pathname === "/terms-and-conditions" ? "hidden" : ""} p-2 `}
+                >
                     <Image src={Logo} alt={"PointExe Logo"} />
                 </Link>
                 <div className="flex justify-between text-sm text-grey-disabled lg:flex-grow">
-                    <div className="hidden lg:flex gap-4">
+                    <div className={`hidden lg:flex gap-4 `}>
                         {linkList.map((item, index) => (
                             <div
                                 key={index}
-                                className={`${index === activeIndex ? "text-grey-light" : "text-grey-disabled"} ${inter.className} font-semibold hover:text-grey-light cursor-pointer py-2`}
+                                className={`${index === activeIndex ? "text-grey-light" : "text-grey-disabled"} ${pathname === "/terms-and-conditions" ? "hidden" : ""} ${inter.className} font-semibold hover:text-grey-light cursor-pointer py-2`}
                             >
                                 <Link
                                     href={item.path}
@@ -83,7 +86,9 @@ export const Navbar = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center gap-4 items-center font-bold mx-auto">
+                    <div
+                        className={`flex justify-center gap-4 items-center font-bold  ${pathname === "/terms-and-conditions" ? "order-first ml-12" : "mx-auto"} `}
+                    >
                         <p
                             className={`${inter.className} text-white underline`}
                         >
@@ -111,9 +116,13 @@ export const Navbar = () => {
                         )}
                     </button>
                 </div>
-                <Link href="/#footer" className="hidden lg:flex">
-                    <GradientButton label="Nous contacter" />
-                </Link>
+                <div
+                    className={`${pathname === "/terms-and-conditions" ? "hidden" : ""}`}
+                >
+                    <Link href="/#footer" className="hidden lg:flex">
+                        <GradientButton label="Nous contacter" />
+                    </Link>
+                </div>
             </nav>
             {isMenuOpened && (
                 <div className="w-full">
