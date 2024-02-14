@@ -17,11 +17,11 @@ export const Footer = () => {
             className=" scroll-smooth scroll-mt-[100px] lg:px-8 bottom-0 w-full mb-12"
         >
             <div
-                className={`${pathname === "/terms-and-conditions" ? "hidden" : ""} bg-black h-[2px] mt-6 w-full`}
+                className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""} bg-black h-[2px] mt-6 w-full`}
             ></div>
-            <div className="flex flex-col gap-12 lg:grid lg:grid-cols-4 text-grey-classic bottom-0 mt-20">
+            <div className="flex flex-col gap-12 lg:grid lg:grid-cols-5 text-grey-classic bottom-0 mt-20">
                 <div
-                    className={` ${pathname === "/terms-and-conditions" ? "hidden" : ""} flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-4 order-last lg:order-none px-2`}
+                    className={` ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""} flex justify-center flex-wrap md:justify-between md:flex-nowrap lg:flex-col gap-4 order-last lg:order-none px-2`}
                 >
                     {linkList.map(
                         (item, index) =>
@@ -65,12 +65,12 @@ export const Footer = () => {
                     </a>
                 </div>
                 <div
-                    className={`${pathname === "/terms-and-conditions" ? "md:col-span-4" : ""} flex justify-center`}
+                    className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "md:col-span-4" : ""} flex justify-center`}
                 >
                     <Image src={Logo} alt={"pointExe logo"} />
                 </div>
                 <div
-                    className={`${pathname === "/terms-and-conditions" ? "hidden" : ""}`}
+                    className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : "mx-auto lg:mx-0 md:col-span-3"}`}
                 >
                     <FooterForm />
                 </div>

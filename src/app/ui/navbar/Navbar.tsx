@@ -59,7 +59,7 @@ export const Navbar = () => {
             <nav className="sticky top-0 flex flex-row justify-between items-center z-40 bg-background-dark p-4">
                 <Link
                     href="/#Hero"
-                    className={` ${pathname === "/terms-and-conditions" ? "hidden" : ""} p-2 `}
+                    className={` ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""} p-2 `}
                 >
                     <Image src={Logo} alt={"PointExe Logo"} />
                 </Link>
@@ -68,7 +68,7 @@ export const Navbar = () => {
                         {linkList.map((item, index) => (
                             <div
                                 key={index}
-                                className={`${index === activeIndex ? "text-grey-light" : "text-grey-disabled"} ${pathname === "/terms-and-conditions" ? "hidden" : ""} ${inter.className} font-semibold hover:text-grey-light cursor-pointer py-2`}
+                                className={`${index === activeIndex ? "text-grey-light" : "text-grey-disabled"} ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""} ${inter.className} font-semibold hover:text-grey-light cursor-pointer py-2`}
                             >
                                 <Link
                                     href={item.path}
@@ -87,7 +87,7 @@ export const Navbar = () => {
                         ))}
                     </div>
                     <div
-                        className={`flex justify-center gap-4 items-center font-bold  ${pathname === "/terms-and-conditions" ? "order-first ml-12" : "mx-auto"} `}
+                        className={`flex justify-center gap-4 items-center font-bold  ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "order-first ml-12" : "mx-auto"} `}
                     >
                         <p
                             className={`${inter.className} text-white underline`}
@@ -117,7 +117,7 @@ export const Navbar = () => {
                     </button>
                 </div>
                 <div
-                    className={`${pathname === "/terms-and-conditions" ? "hidden" : ""}`}
+                    className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""}`}
                 >
                     <Link href="/#footer" className="hidden lg:flex">
                         <GradientButton label="Nous contacter" />
