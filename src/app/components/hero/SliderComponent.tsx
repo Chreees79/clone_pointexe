@@ -16,7 +16,7 @@ export const SliderComponent = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-4 items-center w-[500px]">
+        <div className="grid grid-cols-4 items-center w-[400px]">
             <div className="justify-self-center cursor-pointer">
                 <ChevronLeft
                     width={50}
@@ -33,7 +33,7 @@ export const SliderComponent = () => {
                     <div
                         id="slide"
                         key={index}
-                        className={`flex flex-col items-center mt-6 lg:mt-0 w-[500px] h-[400px]`}
+                        className={`flex flex-col items-center justify-center mt-6 lg:mt-0 w-[350px]  h-[400px] mx-auto`}
                     >
                         <div className="max-w-[128px]">
                             <GradientCard type="rounded" size="w-128px">
