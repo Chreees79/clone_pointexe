@@ -3,7 +3,7 @@ import {
     TITLE_GRADIENT_TYPOGRAPHY,
     TITLE_TYPOGRAPHY,
 } from "@/app/ui/utils/typography";
-import { expertisesList } from "./constants/expertisesList";
+import { expertisesList } from "../constants/expertisesList";
 import { GradientCard } from "@/app/ui/cards/GradientCard";
 import Image from "next/image";
 import { inter } from "@/font/font";

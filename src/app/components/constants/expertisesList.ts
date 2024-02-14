@@ -1,12 +1,12 @@
-import Industry from "../../../../../public/industry-solid.svg";
-import Energy from "../../../../../public/energy-solid.svg";
-import Ecom from "../../../../../public/ecom-solid.svg";
-import Hearth from "../../../../../public/health-solid.svg";
-import Finance from "../../../../../public/finance-solid.svg";
-import Public from "../../../../../public/public-solid.svg";
-import Phone from "../../../../../public/phone-solid.svg";
-import Video from "../../../../../public/video-solid.svg";
-import House from "../../../../../public/house-solid.svg";
+import Industry from "../../../../public/industry-solid.svg";
+import Energy from "../../../../public/energy-solid.svg";
+import Ecom from "../../../../public/ecom-solid.svg";
+import Hearth from "../../../../public/health-solid.svg";
+import Finance from "../../../../public/finance-solid.svg";
+import Public from "../../../../public/public-solid.svg";
+import Phone from "../../../../public/phone-solid.svg";
+import Video from "../../../../public/video-solid.svg";
+import House from "../../../../public/house-solid.svg";
 
 export const expertisesList: {
     image: string;
