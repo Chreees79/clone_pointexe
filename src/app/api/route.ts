@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
     try {
         const formData = req.body;
         if (formData) {
-            sendMail(formData);
+            await sendMail(formData);
         }
         return NextResponse.json(
             { success: "Data received with success" },
