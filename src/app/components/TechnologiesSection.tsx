@@ -30,11 +30,12 @@ export const TechnologiesSection = () => {
                     .
                 </h1>
             </div>
-            <div className="flex flex-col items-center justify-start md:flex-row md:flex-wrap md:justify-center md:items-start gap-1 md:gap-20 lg:gap-24 max-w-[900px] md:mx-auto pb-12 mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-[900px] mx-auto pb-12 mt-16">
+                {" "}
                 {TechnologiesList.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex flex-col items-center lg:self-start pt-12 lg:pt-0`}
+                        className={`flex flex-col items-center pt-12 lg:pt-0 ${index === TechnologiesList.length - 2 ? "lg:col-start-2" : ""} ${index === TechnologiesList.length - 1 ? "md:col-start-2 lg:col-start-3" : ""}`}
                     >
                         <div className="flex items-center  max-w-[70px]">
                             <GradientCard
