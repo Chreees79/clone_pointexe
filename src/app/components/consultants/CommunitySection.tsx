@@ -48,7 +48,12 @@ export const CommunitySection = () => {
                         className={` w-[330px] h-[230px] md:w-[473px] md:h-[312px] bg-almost_black text-center absolute`}
                         style={{ borderRadius: "10%", overflow: "hidden" }}
                     >
-                        <Image src={Computer} alt={"image d'ordinateur"} />
+                        <Image
+                            src={Computer}
+                            alt={"image d'ordinateur"}
+                            fill
+                            style={{ objectFit: "cover" }}
+                        />
                     </div>
                 </div>
                 <div
@@ -66,13 +71,13 @@ export const CommunitySection = () => {
                                     {item.title}
                                 </h3>
                             </div>
-                            <p className="text-sm text-grey-classic">
+                            <div className="text-sm text-grey-classic">
                                 {item.text
                                     .split("\n")
                                     .map((partText, index) => (
                                         <p key={index}>{partText}</p>
                                     ))}
-                            </p>
+                            </div>
                         </div>
                     ))}
                 </div>

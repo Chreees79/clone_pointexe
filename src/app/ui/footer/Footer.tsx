@@ -67,7 +67,11 @@ export const Footer = () => {
                 <div
                     className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "md:col-span-4" : ""} flex justify-center`}
                 >
-                    <Image src={Logo} alt={"pointExe logo"} />
+                    <Image
+                        src={Logo}
+                        alt={"pointExe logo"}
+                        style={{ width: "auto", height: "auto" }}
+                    />
                 </div>
                 <div
                     className={`${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : "mx-auto lg:mx-0 md:col-span-3"}`}
