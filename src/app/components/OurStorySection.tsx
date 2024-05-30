@@ -36,11 +36,7 @@ export const OurStorySection = () => {
                         className={`w-[330px] h-[230px] md:w-[473px] md:h-[400px] bg-almost_black text-center absolute`}
                         style={{ borderRadius: "10%", overflow: "hidden" }}
                     >
-                        <Image
-                            src={Paris}
-                            alt={"image de Paris"}
-                            fill
-                        />
+                        <Image src={Paris} alt={"image de Paris"} fill />
                     </div>
                 </div>
                 <div>

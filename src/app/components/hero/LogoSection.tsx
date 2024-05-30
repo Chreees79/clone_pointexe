@@ -22,16 +22,10 @@ export const LogoSection = () => {
                 />
             </div>
             <div className="mx-2 md:mx-6 my-[18px] max-w-[90px] md:max-w-[180px]">
-                <Image
-                    src={Cafffeine}
-                    alt={"Cafffeine logo"}
-                />
+                <Image src={Cafffeine} alt={"Cafffeine logo"} />
             </div>
             <div className="mx-2 md:mx-6 md:my-[18px] max-w-[90px] md:max-w-[163px]">
-                <Image
-                    src={Theodo}
-                    alt={"Theodo logo"}
-                />
+                <Image src={Theodo} alt={"Theodo logo"} />
             </div>
         </div>
     );

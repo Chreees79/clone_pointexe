@@ -52,7 +52,7 @@ export const Hero = () => {
                                     alt=""
                                     height={16}
                                     width={16}
-                                    style={{ width: 'auto', height: 'auto' }}
+                                    style={{ width: "auto", height: "auto" }}
                                 />
                             </span>
                             Exclusivité : Vous avez un interlocuteur dédié,
@@ -65,7 +65,7 @@ export const Hero = () => {
                                     alt=""
                                     height={16}
                                     width={16}
-                                    style={{ width: 'auto', height: 'auto' }} 
+                                    style={{ width: "auto", height: "auto" }}
                                 />
                             </span>
                             Conseil : Un suivi et des recommandation sur-mesure,
