@@ -39,7 +39,7 @@ export const OurStorySection = () => {
                         <Image
                             src={Paris}
                             alt={"image de Paris"}
-                            layout="fill"
+                            fill
                         />
                     </div>
                 </div>

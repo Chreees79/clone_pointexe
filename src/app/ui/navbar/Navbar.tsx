@@ -61,7 +61,12 @@ export const Navbar = () => {
                     href="/#Hero"
                     className={` ${pathname === "/terms-and-conditions" || pathname === "/privacy-policy" ? "hidden" : ""} p-2 `}
                 >
-                    <Image src={Logo} alt={"PointExe Logo"} />
+                    <Image
+                        src={Logo}
+                        alt={"PointExe Logo"}
+                        priority
+                        style={{ width: "auto", height: "auto" }}
+                    />
                 </Link>
                 <div className="flex justify-between text-sm text-grey-disabled lg:flex-grow">
                     <div className="hidden lg:flex gap-4">
@@ -106,6 +111,7 @@ export const Navbar = () => {
                                     alt="menu burger"
                                     width={24}
                                     height={24}
+                                    style={{ width: "auto", height: "auto" }}
                                 />
                             ) : (
                                 <Image
@@ -113,6 +119,7 @@ export const Navbar = () => {
                                     alt="menu burger"
                                     width={24}
                                     height={24}
+                                    style={{ width: "auto", height: "auto" }}
                                 />
                             )}
                         </button>
